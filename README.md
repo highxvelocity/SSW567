@@ -1,6 +1,8 @@
 # SSW567
 Repository for the SSW 567 class
 
+[![Build Status](https://travis-ci.org/CCorrado/SSW567.svg?branch=master)](https://travis-ci.org/CCorrado/SSW567)
+
 ### Prerequisites
 Python 3.x +
 
