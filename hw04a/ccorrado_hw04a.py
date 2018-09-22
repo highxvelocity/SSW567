@@ -21,7 +21,7 @@ class GitRepo(object):
         self.commit_list = commit_list
 
     def __str__(self):
-        return "Repo: " + self.repo.get("name") + " Number of commits: " + len(self.commit_list)
+        return "Repo: " + self.repo.get("name") + " Number of commits: " + str(len(self.commit_list))
 
 
 def get_repos_for_user(github_id):
