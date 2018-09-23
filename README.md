@@ -1,6 +1,9 @@
 # SSW567
 Repository for the SSW 567 class
 
+[![Build Status](https://travis-ci.org/CCorrado/SSW567.svg?branch=master)](https://travis-ci.org/CCorrado/SSW567)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bb8b9bf108a64f769f852ceae854b7ec)](https://www.codacy.com/app/CCorrado/SSW567?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=CCorrado/SSW567&amp;utm_campaign=Badge_Grade)
+
 ### Prerequisites
 Python 3.x +
 
