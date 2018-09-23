@@ -45,10 +45,10 @@ class GitRepoTests(TestCase):
         Assert that the name is equal to the name of the first repo in the sample file.
         Assert that the length of the commit list is 23.
         """
-        with open("../hw04a/sample_repo_data.json") as file:
+        with open("./hw04a/sample_repo_data.json") as file:
             repos = json.load(file)
             self.assertTrue(repos != [])
-            with open("../hw04a/sample_commit_data.json") as commit_file:
+            with open("./hw04a/sample_commit_data.json") as commit_file:
                 commits = json.load(commit_file)
                 self.assertTrue(repos[0].get("owner").get("node_id") == commits[0].get("author").get("node_id"))
                 git_repo = GitRepo(repos[0], commits)
