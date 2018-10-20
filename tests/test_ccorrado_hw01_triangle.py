@@ -32,6 +32,26 @@ class TriangleTests(unittest.TestCase):
         self.assertFalse(triangle.is_right(), "Triangle is NOT Right")
         self.assertFalse(triangle.is_isosceles(), "Triangle is NOT Isosceles")
 
+    def test_not_a_triangle(self):
+        triangle = classify_triangle(0, 0, 0)
+        self.assertEqual(str(triangle), "Invalid")
+
+    def test_neg_triangle(self):
+        triangle = classify_triangle(-1, 1, 1)
+        self.assertEqual(str(triangle), "Invalid")
+
+    def test_neg_triangle_2(self):
+        triangle = classify_triangle(1, -2, 1)
+        self.assertEqual(str(triangle), "Invalid")
+
+    def test_neg_triangle_3(self):
+        triangle = classify_triangle(1, 1, -1)
+        self.assertEqual(str(triangle), "Invalid")
+
+    def test_str_triangle(self):
+        triangle = classify_triangle("not", "a", "triangle")
+        self.assertEqual(str(triangle), "Invalid")
+
 
 if __name__ == "__main__":
     unittest.main()
